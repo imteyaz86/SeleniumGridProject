@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="3" name="Failed suite [Suite]" parallel="methods">
+  <test name="Test(failed)" parallel="methods">
+    <classes>
+      <class name="com.test.module1testscripts3.TestClass1">
+        <methods>
+          <include name="exitSetUp"/>
+          <include name="testsample1"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.test.module1testscripts3.TestClass1 -->
+      <class name="com.test.module1testscripts3.TestClass2">
+        <methods>
+          <include name="testsample1"/>
+        </methods>
+      </class> <!-- com.test.module1testscripts3.TestClass2 -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

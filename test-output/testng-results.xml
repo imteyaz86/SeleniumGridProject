@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="3" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="55372" started-at="2018-09-15T10:30:05Z" finished-at="2018-09-15T10:31:00Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="55372" started-at="2018-09-15T10:30:05Z" finished-at="2018-09-15T10:31:00Z">
+      <class name="com.test.module1testscripts.TestClass3">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.test.module1testscripts.TestClass3@1e88b3c]" name="setUp" is-config="true" duration-ms="511" started-at="2018-09-15T16:00:04Z" finished-at="2018-09-15T16:00:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testsample1()[pri:0, instance:com.test.module1testscripts.TestClass3@1e88b3c]" name="testsample1" duration-ms="55302" started-at="2018-09-15T16:00:05Z" finished-at="2018-09-15T16:01:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testsample1 -->
+        <test-method status="PASS" signature="exitSetUp()[pri:0, instance:com.test.module1testscripts.TestClass3@1e88b3c]" name="exitSetUp" is-config="true" duration-ms="17686" started-at="2018-09-15T16:01:01Z" finished-at="2018-09-15T16:01:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- exitSetUp -->
+      </class> <!-- com.test.module1testscripts.TestClass3 -->
+      <class name="com.test.module1testscripts.TestClass2">
+        <test-method status="PASS" signature="testsample1()[pri:0, instance:com.test.module1testscripts.TestClass2@53b32d7]" name="testsample1" duration-ms="55307" started-at="2018-09-15T16:00:05Z" finished-at="2018-09-15T16:01:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testsample1 -->
+      </class> <!-- com.test.module1testscripts.TestClass2 -->
+      <class name="com.test.module1testscripts.TestClass1">
+        <test-method status="PASS" signature="testsample1()[pri:0, instance:com.test.module1testscripts.TestClass1@343f4d3d]" name="testsample1" duration-ms="55349" started-at="2018-09-15T16:00:05Z" finished-at="2018-09-15T16:01:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testsample1 -->
+      </class> <!-- com.test.module1testscripts.TestClass1 -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

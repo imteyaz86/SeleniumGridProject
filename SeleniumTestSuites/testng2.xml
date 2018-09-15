@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="methods" thread-count="3" >
+	
+	<!-- <listeners>
+		<listener class-name="com.test.basesetup.TestNgRealTime" />
+	</listeners> -->
+	
+	<test name="Test">
+		
+		<packages>
+		
+		<package name="com.test.module1testscripts3.*"></package>
+		
+		</packages>
+		
+	</test>
+	
+	
+	<!-- <test name="Test2">
+		
+		<packages>
+		
+		<package name="com.test.module1testscripts3.*"></package>
+		
+		</packages>
+		
+	</test> -->
+</suite> <!-- Suite -->

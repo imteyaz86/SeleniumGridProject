@@ -1,0 +1,184 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>developbranchs</groupId>
+	<artifactId>developbranchs</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+
+	<!-- <groupId>com.channel4.mint.commons</groupId> <artifactId>mint-parent</artifactId> 
+		<name>mint-parent</name> <version>1.0.0</version> -->
+
+	<!-- <properties> <suiteXmlFile>SeleniumTestSuites/testng.xml</suiteXmlFile> 
+		<suiteXmlFile>SeleniumTestSuites/testng2.xml</suiteXmlFile> </properties> -->
+
+	<!-- <properties> <group>Hello1986</group> </properties> -->
+
+	<dependencies>
+
+		<dependency>
+			<groupId>joda-time</groupId>
+			<artifactId>joda-time</artifactId>
+			<version>2.9.7</version>
+		</dependency>
+		<!-- <dependency> <groupId>com.oracle.jdbc</groupId> <artifactId>ojdbc7</artifactId> 
+			<version>12.1.0.2</version> </dependency> -->
+
+		<dependency>
+			<groupId>commons-configuration</groupId>
+			<artifactId>commons-configuration</artifactId>
+			<version>1.10</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.seleniumhq.selenium</groupId>
+			<artifactId>selenium-java</artifactId>
+			<version>3.2.0</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.testng</groupId>
+			<artifactId>testng</artifactId>
+			<version>6.8</version>
+			<scope>test</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>com.relevantcodes</groupId>
+			<artifactId>extentreports</artifactId>
+			<version>2.41.1</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.poi</groupId>
+			<artifactId>poi</artifactId>
+			<version>3.8</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.poi</groupId>
+			<artifactId>poi-ooxml</artifactId>
+			<version>3.7</version>
+		</dependency>
+
+		<dependency>
+			<groupId>xml-apis</groupId>
+			<artifactId>xml-apis</artifactId>
+			<version>1.4.01</version>
+		</dependency>
+
+		<dependency>
+			<groupId>commons-net</groupId>
+			<artifactId>commons-net</artifactId>
+			<version>3.3</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.commons</groupId>
+			<artifactId>commons-lang3</artifactId>
+			<version>3.0</version>
+		</dependency>
+
+		<dependency>
+			<groupId>commons-io</groupId>
+			<artifactId>commons-io</artifactId>
+			<version>2.5</version>
+		</dependency>
+
+
+		<!-- <dependency> <groupId>com.puppycrawl.tools</groupId> <artifactId>checkstyle</artifactId> 
+			<version>8.3</version> </dependency> -->
+
+	</dependencies>
+
+	<build>
+
+		<plugins>
+
+			<plugin>
+
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.0</version>
+				<configuration>
+					<compilerVersion>1.8</compilerVersion>
+					<source>7</source>
+					<target>7</target>
+				</configuration>
+			</plugin>
+
+	<plugin>
+		<groupId>org.apache.maven.plugins</groupId>
+		<artifactId>maven-surefire-plugin</artifactId>
+		<version>2.19.1</version>
+		<configuration>
+			<!-- <suiteXmlFiles>
+				<suiteXmlFile>${suiteXmlFile}</suiteXmlFile>
+			</suiteXmlFiles> -->
+			<threadCount>${threadCount}</threadCount>
+			<parallel>methods</parallel>
+			<groups>${group}</groups>
+			<excludedGroups>${excludedGroups}</excludedGroups>
+		</configuration>
+	</plugin> 
+
+			<!-- <plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<version>2.20</version>
+				<executions>
+					<execution>
+						<id>integration-test</id>
+						<goals>
+							<goal>test1</goal>
+						</goals>
+						<phase>integration-test</phase>
+						<configuration>
+							<parallel>${parallelType}</parallel>
+							<reuseForks>true</reuseForks>
+							<forkCount>${forkCount}</forkCount>
+							<useUnlimitedThreads>${useUnlimitedThreads}</useUnlimitedThreads>
+							<testFailureIgnore>true</testFailureIgnore>
+							<includes> <include>**/runners/**/*Runner.class</include> </includes>
+							<suiteXmlFiles>
+								<suiteXmlFile>${suiteXmlFile}</suiteXmlFile>
+							</suiteXmlFiles>
+							<threadCount>${threadCount}</threadCount>
+							<parallel>methods</parallel>
+							<groups>${group}</groups>
+							<excludedGroups>${excludedGroups}</excludedGroups>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin> -->
+
+
+		</plugins>
+		<filters>
+			<filter>src/test/resources/configs/${build.profile.id}/utilities.properties</filter>
+		</filters>
+		<resources>
+			<resource>
+				<directory>src/test/resources/configs/${build.profile.id}</directory>
+				<filtering>true</filtering>
+			</resource>
+		</resources>
+	</build>
+
+	<profiles>
+		<profile>
+			<id>int</id>
+			<properties>
+				<build.profile.id>int</build.profile.id>
+			</properties>
+		</profile>
+		<profile>
+			<id>test</id>
+			<activation>
+				<activeByDefault>true</activeByDefault>
+			</activation>
+			<properties>
+				<build.profile.id>test</build.profile.id>
+			</properties>
+		</profile>
+	</profiles>
+</project>

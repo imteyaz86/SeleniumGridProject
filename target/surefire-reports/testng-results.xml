@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Surefire suite" duration-ms="23327" started-at="2018-07-28T10:02:31Z" finished-at="2018-07-28T10:02:54Z">
+    <groups>
+      <group name="mytest">
+        <method signature="TestClass1.testsample1()[pri:0, instance:com.test.module1testscripts3.TestClass1@548a9f61]" name="testsample1" class="com.test.module1testscripts3.TestClass1"/>
+        <method signature="TestClass2.testsample1()[pri:0, instance:com.test.module1testscripts3.TestClass2@7f9a81e8]" name="testsample1" class="com.test.module1testscripts3.TestClass2"/>
+      </group> <!-- mytest -->
+    </groups>
+    <test name="Surefire test" duration-ms="23327" started-at="2018-07-28T10:02:31Z" finished-at="2018-07-28T10:02:54Z">
+      <class name="com.test.module1testscripts3.TestClass1">
+        <test-method status="PASS" signature="testsample1()[pri:0, instance:com.test.module1testscripts3.TestClass1@548a9f61]" name="testsample1" duration-ms="21868" started-at="2018-07-28T15:32:31Z" finished-at="2018-07-28T15:32:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testsample1 -->
+      </class> <!-- com.test.module1testscripts3.TestClass1 -->
+      <class name="com.test.module1testscripts3.TestClass2">
+        <test-method status="PASS" signature="testsample1()[pri:0, instance:com.test.module1testscripts3.TestClass2@7f9a81e8]" name="testsample1" duration-ms="23315" started-at="2018-07-28T15:32:31Z" finished-at="2018-07-28T15:32:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testsample1 -->
+      </class> <!-- com.test.module1testscripts3.TestClass2 -->
+      <class name="com.test.module1testscripts.TestClass1">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.test.module1testscripts.TestClass1@5d5eef3d]" name="setUp" is-config="true" duration-ms="600" started-at="2018-07-28T15:32:30Z" finished-at="2018-07-28T15:32:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="exitSetUp()[pri:0, instance:com.test.module1testscripts.TestClass1@5d5eef3d]" name="exitSetUp" is-config="true" duration-ms="449" started-at="2018-07-28T15:32:54Z" finished-at="2018-07-28T15:32:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- exitSetUp -->
+      </class> <!-- com.test.module1testscripts.TestClass1 -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>
